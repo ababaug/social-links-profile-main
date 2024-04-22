@@ -52,7 +52,7 @@ To see how you can add code snippets, see below:
 
 ```html
 <body>
-  <main class="container">
+  <section class="container" role="main">
     <div class="img">
       <img src="./assets/images/avatar-jessica.jpeg" alt="" />
     </div>
@@ -60,7 +60,7 @@ To see how you can add code snippets, see below:
       <h1>Jessica Randall <br /><span>London, United Kingdom</span></h1>
       <p>"Front-end developer and avid reader."</p>
     </div>
-    <div class="social">
+    <div class="social" role="complementary">
       <ul>
         <li>
           <div>GitHub</div>
@@ -79,7 +79,7 @@ To see how you can add code snippets, see below:
         </li>
       </ul>
     </div>
-  </main>
+  </section>
 </body>
 ```
 
