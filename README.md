@@ -162,7 +162,7 @@ body {
 .info h1 span {
   font-family: Inter-bold;
   font-size: 12px;
-  color: #88a240;
+  color: #c5ff27;
 }
 
 .info p {
@@ -192,10 +192,10 @@ body {
 
 @media only screen and (min-width: 600px) {
   .container {
-    height: 509px;
+    height: 501px;
     width: 310px;
     border-radius: 10px;
-    padding: 27px 0;
+    padding: 24px 0;
   }
 
   .info h1 {
