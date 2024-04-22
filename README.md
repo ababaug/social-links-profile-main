@@ -191,10 +191,41 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+  .container {
+    height: 509px;
+    width: 310px;
+    border-radius: 10px;
+    padding: 27px 0;
+  }
+
+  .info h1 {
+    font-family: Inter-bold;
+    font-size: 22px;
+  }
+
+  .info h1 span {
+    font-family: Inter-bold;
+    font-size: 12px;
+  }
+
+  .info p {
+    font-family: Inter-semi;
+    font-size: 12px;
+  }
+
+  .social ul li div {
+    font-size: 12px;
+    width: 260px;
+  }
+
   .social ul li div:hover {
     background-color: yellow;
     color: black;
     cursor: pointer;
+  }
+
+  .social li:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
 ```

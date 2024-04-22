@@ -105,9 +105,37 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+    .container {
+        height: 520px;
+        width: 310px;
+        border-radius: 10px;
+        padding: 20px 0;
+    }
+
+    .info h1 {
+        font-family: Inter-bold;
+        font-size: 22px;
+    }
+
+    .info h1 span {
+        font-family: Inter-bold;
+        font-size: 13px;
+    }
+
+    .info p {
+        font-family: Inter-semi;
+        font-size: 13px;
+    }
+
+    .social ul li div {
+        font-size: 13px;
+        width: 266px;
+    }
+
     .social ul li div:hover {
         background-color: yellow;
         color: black;
         cursor: pointer;
     }
+
 }
