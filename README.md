@@ -1,6 +1,6 @@
-# Frontend Mentor - Blog preview card solution
+# Frontend Mentor - Social links profile solution
 
-This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ababaug/blog-preview-card-main]
-- Live Site URL: [https://ababaug.github.io/blog-preview-card-main/]
+- Solution URL: [https://github.com/ababaug/social-links-profile-main]
+- Live Site URL: [https://ababaug.github.io/social-links-profile-main/]
 
 ## My process
 
@@ -52,182 +52,149 @@ To see how you can add code snippets, see below:
 
 ```html
 <body>
-  <div class="container">
-    <header>
-      <div class="article-img">
-        <img src="./assets/images/illustration-article.svg" alt="" />
-      </div>
-    </header>
-    <main class="article-content">
-      <span class="article-nav">Learning</span>
-      <p class="article-pub">Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
-      <p class="article-paragraph">
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </p>
-    </main>
-    <footer class="article-footer">
-      <img src="./assets/images/image-avatar.webp" alt="" />
-      <p>Greg Hooper</p>
-    </footer>
-  </div>
+  <section class="container">
+    <div class="img">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+    </div>
+    <div class="info">
+      <h1>Jessica Randall <br /><span>London, United Kingdom</span></h1>
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="social">
+      <ul>
+        <li>
+          <div cl>GitHub</div>
+        </li>
+        <li>
+          <div>Frontend Mentor</div>
+        </li>
+        <li>
+          <div>LinkedIn</div>
+        </li>
+        <li>
+          <div>Twitter</div>
+        </li>
+        <li>
+          <div>Instagram</div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </body>
 ```
 
 ```css
 @font-face {
-  font-family: Figtree-italic;
-  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+  font-family: Inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
 @font-face {
-  font-family: Figtree;
-  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-family: Inter-bold;
+  src: url(assets/fonts/static/Inter-Bold.ttf);
 }
 
 @font-face {
-  font-family: Figtree-Extra;
-  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-family: Inter-regular;
+  src: url(assets/fonts/static/Inter-Regular.ttf);
 }
 
 @font-face {
-  font-family: Figtree-semi;
-  src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+  font-family: Inter-semi;
+  src: url(assets/fonts/static/Inter-SemiBold.ttf);
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
+  background-color: #141414;
+  color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 812px;
-  background-color: yellow;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .container {
-  background-color: white;
-  width: 327px;
-  height: 501px;
-  border-radius: 20px;
-  box-shadow: 8px 8px black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.article-img {
-  width: 279px;
-  height: 200px;
-}
-
-.article-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.article-content {
-  width: 279px;
-  height: 173px;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.article-content .article-nav {
-  background-color: yellow;
-  border: 0;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-family: Figtree-extra;
-  font-size: 12px;
-  width: 73px;
-}
-
-.article-content .article-pub {
-  font-family: Figtree;
-  font-size: 12px;
-}
-
-.article-content h1 {
-  font-family: Figtree-extra;
-  font-size: 20px;
-  line-height: 150%;
-}
-
-.article-content .article-paragraph {
-  font-family: Figtree-semi;
-  font-size: 14px;
-  line-height: 150%;
-  color: grey;
-}
-
-.article-footer {
-  display: flex;
-  gap: 12px;
   align-items: center;
-  align-self: flex-start;
-  padding: 0 24px;
+  border: 0;
+  box-shadow: 5px 10px transparent;
+  height: 491px;
+  width: 291px;
+  border-radius: 10px;
+  padding: 20px 0;
 }
 
-.article-footer img {
-  width: 32px;
-  height: 32px;
+.img {
+  width: 75px;
+  height: 75px;
 }
 
-.article-footer p {
-  font-family: Figtree-extra;
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  text-align: center;
+}
+
+.info h1 {
+  font-family: Inter-bold;
+  font-size: 20px;
+}
+
+.info h1 span {
+  font-family: Inter-bold;
+  font-size: 12px;
+  color: #88a240;
+}
+
+.info p {
+  font-family: Inter-semi;
+  font-size: 12px;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li div {
+  font-family: Inter-bold;
+  font-size: 12px;
+  background-color: #333333;
+  width: 250px;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 5px 5px transparent;
+  padding: 12px 0;
+}
+
+.social li:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 @media only screen and (min-width: 600px) {
-  .container {
-    width: 384px;
-    height: 522px;
-  }
-
-  .container:hover {
-    box-shadow: 14px 14px black;
-  }
-
-  .article-img {
-    width: 336px;
-  }
-
-  .article-content {
-    width: 336px;
-    height: 194px;
-  }
-
-  .article-content .article-nav {
-    font-size: 14px;
-    width: 82px;
-  }
-
-  .article-content .article-pub {
-    font-size: 14px;
-  }
-
-  .article-content h1 {
-    font-size: 25px;
-    line-height: 150%;
-  }
-
-  .article-content h1:hover {
-    color: yellow;
+  .social ul li div:hover {
+    background-color: yellow;
+    color: black;
     cursor: pointer;
-  }
-
-  .article-content .article-paragraph {
-    font-size: 16px;
-    line-height: 150%;
   }
 }
 ```
